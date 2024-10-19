@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "ifx_types.h": "c",
+        "module_i2c.h": "c"
+    }
+}
