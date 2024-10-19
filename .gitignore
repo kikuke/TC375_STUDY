@@ -1,3 +1,9 @@
+#####     CUSTOM SETTING     #####
+# Eclipse
+.metadata/
+
+#####    DEFAULT SETTING     #####
+
 # Prerequisites
 *.d
 
