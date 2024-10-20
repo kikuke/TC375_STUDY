@@ -18,5 +18,6 @@ typedef struct _Module_I2C_Inst {
 
 extern void Init_I2C(Module_I2C_Inst *inst, const Module_I2C_Config *config);
 extern IfxI2c_I2c_Status I2c_write(IfxI2c_I2c_Device *i2cDevice, volatile uint8 *data, Ifx_SizeT size);
+extern IfxI2c_I2c_Status I2c_read(IfxI2c_I2c_Device *i2cDevice, volatile uint8 *data, Ifx_SizeT size);
 
 #endif

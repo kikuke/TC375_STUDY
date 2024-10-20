@@ -10,7 +10,9 @@
 
 #define SSD1306_I2C_BAUDRATE            1000000                 /* Table 13-6 : tIdle = 1.3us
                                                                    Maximum Baudrate = 1.3 * 8(bps) * 1000*1000(us to s) = 1040000 */
-#define SSD1306_I2C_BUFF_MAX            32
+#define SSD1306_MAX_SEG                 128
+#define SSD1306_MAX_PAGE                8
+#define SSD1306_I2C_BUFF_MAX            (SSD1306_MAX_SEG * 2)
 
 #define GET_SSD1306_ADDR(bSA0) (uint8)( (0x3C) | (0x01 & bSA0) )
 
@@ -20,5 +22,7 @@ typedef enum eSSD1306_Packet_T {
 } SSD1306_Packet_T;
 
 extern void Init_SSD1306(void);
+extern void SSD1306_SetDisplay(uint8 *buff, uint8 startPage, uint8 pageLen, uint8 startColumn, uint8 columnLen);
+extern void SSD1306_ClearDisplay(void);
 
 #endif

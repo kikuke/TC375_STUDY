@@ -28,3 +28,11 @@ IfxI2c_I2c_Status I2c_write(IfxI2c_I2c_Device *i2cDevice, volatile uint8 *data, 
 
     return ret;
 }
+
+IfxI2c_I2c_Status I2c_read(IfxI2c_I2c_Device *i2cDevice, volatile uint8 *data, Ifx_SizeT size)
+{
+    IfxI2c_I2c_Status ret = 0;
+    while((ret = IfxI2c_I2c_read(i2cDevice, data, size)) == IfxI2c_I2c_Status_nak);
+
+    return ret;
+}

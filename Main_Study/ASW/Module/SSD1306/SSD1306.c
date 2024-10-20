@@ -1,14 +1,17 @@
 #include "Module_I2C.h"
 #include "SSD1306.h"
 
+static void SetPageAndColumnPosition(uint8 page, uint8 column);
+static void _DafaultSoftwareInit(void);
+
 /* 9-1 Command Table */
 /********************************/
 /*     Fundamental Command      */
 /********************************/
-static void _SetContrastControl(uint8 value);
-static void _EntireDisplayOn(uint8 bIgCon);
-static void _SetNormalInverseDisplay(uint8 bInverse);
-static void _SetDisplayOnOff(uint8 bOn);
+static void SetContrastControl(uint8 value);
+static void EntireDisplayOn(uint8 bIgCon);
+static void SetNormalInverseDisplay(uint8 bInverse);
+static void SetDisplayOnOff(uint8 bOn);
 
 /********************************/
 /*       Scrolling Command      */
@@ -110,7 +113,14 @@ static void NOP_CMD(void);
  * 
  * @return uint8 1 for display OFF / 0 for display ON
  */
-static uint8 StatusRegisterRead(void); // TODO: Need To Implement
+static uint8 StatusRegisterRead(void);
+
+
+/*******************************************/
+/*       Charge Pump Setting Command       */
+/*******************************************/
+
+static void ChargePumpSetting(uint8 bEnable);
 
 /*******************************************/
 /*       I2C Communication Function        */
@@ -132,35 +142,97 @@ static const Module_I2C_Config ssd1306_config = {
 
 static Module_I2C_Inst ssd1306_inst;
 
+static void TestDisplay(void)
+{
+    uint8 data[SSD1306_MAX_PAGE][SSD1306_I2C_BUFF_MAX] = {
+        {0xFF,0xFF,0xFF,0xFF, 0x00,0x00,0x00,0x00},
+        {0x00,0x00,0x00,0x00, 0xFF,0xFF,0xFF,0xFF}
+    };
+    SSD1306_SetDisplay(data, 0, SSD1306_MAX_PAGE, 0, SSD1306_MAX_SEG);
+}
+
 void Init_SSD1306(void)
 {
     Init_I2C(&ssd1306_inst, &ssd1306_config);
 
-    _EntireDisplayOn(1);
+    _DafaultSoftwareInit();
+    SSD1306_ClearDisplay();
+    TestDisplay();
 }
 
-static void _SetContrastControl(uint8 value)
+void SSD1306_SetDisplay(uint8 *buff, uint8 startPage, uint8 pageLen, uint8 startColumn, uint8 columnLen)
+{
+    const int endPage = startPage + pageLen;
+
+    for (int i = startPage; i < endPage; i++) {
+        SetPageAndColumnPosition(i, startColumn);
+        _SendData(SSD1306_Packet_DATA, (buff + (i * columnLen)), columnLen);
+    }
+}
+
+
+void SSD1306_ClearDisplay(void)
+{
+    uint8 data[SSD1306_I2C_BUFF_MAX] = {0};
+
+    SetPageAndColumnPosition(0, 0);
+    for (int i = 0; i < SSD1306_MAX_PAGE; i++) {
+        SetPageStartForPageMode(i);
+        _SendData(SSD1306_Packet_DATA, data, SSD1306_MAX_SEG);
+    }
+}
+
+static void SetPageAndColumnPosition(uint8 page, uint8 column)
+{
+    SetPageStartForPageMode(page);
+    SetLowColStartAddrPageMode(0x0F&column);
+    SetHighColStartAddrPageMode(0x0F&(column >> 4));
+}
+
+static void _DafaultSoftwareInit(void)
+{
+    SetMultiplexRatio(0x3F);                /* 63+1 = 64 MUX*/
+    SetDisplayOffset(0x00);                 /* Set Vertical shift by Com from 0*/
+    SetDisplayStartLine(0x00);              /* Set display RAM display start register from 0 */
+#if 0
+    SetSegmentReMap(0);                     /* column address 0 is mapped to SEG0 */
+    SetComOutputScanDirection(0);           /* Normal mode - Scan from COM[0] to COM[N-1]. N is the Multiplex Ratio */
+    SetComPinsHardwareConfig(0);            /* Sequential COM pin configuration */
+#else   /* Figure 4-1 */
+    SetSegmentReMap(1);                     /* column address 127 is mapped to SEG0 */
+    SetComOutputScanDirection(1);           /* Normal mode - Scan from COM[N-1] to COM[0]. N is the Multiplex Ratio */
+    SetComPinsHardwareConfig(1);            /* Alternative COM pin configuration */
+#endif
+    SetContrastControl(0x7F);               /* Contrast = 0x7F */
+    EntireDisplayOn(0);                     /* Resume to RAM content display. Output follows RAM content */
+    SetNormalInverseDisplay(0);             /* Normal display */
+    SetDisplayClockRatioFreq(0x0, 0x8);     /* divide ratio of the display clocks = 0, Oscilator Frequency = 0x8 */
+    ChargePumpSetting(1);                   /* Enable charge pump during display on */
+    SetDisplayOnOff(1);                     /* Display On in normal mode */
+}
+
+static void SetContrastControl(uint8 value)
 {
     uint8 cmd[2] = {0x81, value};
 
     _SendData(SSD1306_Packet_COMMAND, cmd, 2);
 }
 
-static void _EntireDisplayOn(uint8 bIgCon)
+static void EntireDisplayOn(uint8 bIgCon)
 {
     uint8 cmd[1] = {(0xA4 | (0x01 & bIgCon))};
 
     _SendData(SSD1306_Packet_COMMAND, cmd, 1);
 }
 
-static void _SetNormalInverseDisplay(uint8 bInverse)
+static void SetNormalInverseDisplay(uint8 bInverse)
 {
     uint8 cmd[1] = {(0xA6 | (0x01 & bInverse))};
 
     _SendData(SSD1306_Packet_COMMAND, cmd, 1);
 }
 
-static void _SetDisplayOnOff(uint8 bOn)
+static void SetDisplayOnOff(uint8 bOn)
 {
     uint8 cmd[1] = {(0xAE | (0x01 & bOn))};
 
@@ -364,12 +436,25 @@ static void NOP_CMD(void)
 
 static uint8 StatusRegisterRead(void)
 {
-    return 0;
+    uint8 data[1] = {0};
+
+    I2c_read(&ssd1306_inst.dev, data, 1);
+    return ((0x01)&(data[0] >> 6));
+}
+
+static void ChargePumpSetting(uint8 bEnable)
+{
+    uint8 cmd[2] = {
+            (0x8D),
+            ((0x10) | (0x04 & (bEnable << 2)))
+        };
+
+    _SendData(SSD1306_Packet_COMMAND, cmd, 2);
 }
 
 static void _SendData(SSD1306_Packet_T type, const uint8 *data, Ifx_SizeT size)
 {
-    uint8 buffer[SSD1306_I2C_BUFF_MAX];
+    uint8 buffer[SSD1306_I2C_BUFF_MAX] = {0};
 
     _MakePacket(buffer, type, data, size);
     _SendPacket(type, buffer, size * 2); /* Control Byte + Data Byte */
@@ -382,9 +467,14 @@ static void _SendPacket(SSD1306_Packet_T type, const uint8 *packet, Ifx_SizeT si
 
 static void _MakePacket(uint8 *buffer, SSD1306_Packet_T type, const uint8 *data, Ifx_SizeT size)
 {
-    const uint8 cByte = (0x00 | (type << 6));
+    const uint8 _contBit = 0x80;
+    const uint8 _cByte = (0x00 | (type << 6));
+    uint8 cByte;
 
+    cByte = _cByte | _contBit;
     for (int i=0; i < size; i++) {
+        if (i >= size -1) cByte &= !_contBit;
+
         buffer[i * 2] = cByte;
         buffer[(i * 2) + 1] = data[i];
     }
