@@ -10,6 +10,7 @@
 
 #define SSD1306_I2C_BAUDRATE            1000000                 /* Table 13-6 : tIdle = 1.3us
                                                                    Maximum Baudrate = 1.3 * 8(bps) * 1000*1000(us to s) = 1040000 */
+#define SSD1306_SEG_LEN                 8
 #define SSD1306_MAX_SEG                 128
 #define SSD1306_MAX_PAGE                8
 #define SSD1306_I2C_BUFF_MAX            (SSD1306_MAX_SEG * 2)

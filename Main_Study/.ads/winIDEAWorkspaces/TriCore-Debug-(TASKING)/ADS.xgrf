@@ -45,7 +45,7 @@
         </__.3>
         <__.4>
          <BookmarkList></BookmarkList>
-         <CaretPos>1353</CaretPos>
+         <CaretPos>1469</CaretPos>
          <Encoding>8</Encoding>
          <FileName>C:\Users\KJS\Documents\DV\TC375_STUDY\Main_Study\ASW\Module\I2C\Module_I2C.c</FileName>
          <FileType>1</FileType>
@@ -53,15 +53,15 @@
         </__.4>
         <__.5>
          <BookmarkList></BookmarkList>
-         <CaretPos>5307</CaretPos>
+         <CaretPos>12249</CaretPos>
          <Encoding>8</Encoding>
          <FileName>C:\Users\KJS\Documents\DV\TC375_STUDY\Main_Study\ASW\Module\SSD1306\SSD1306.c</FileName>
          <FileType>1</FileType>
-         <ScrollPos>161</ScrollPos>
+         <ScrollPos>254</ScrollPos>
         </__.5>
         <__.6>
          <BookmarkList></BookmarkList>
-         <CaretPos>22178</CaretPos>
+         <CaretPos>22899</CaretPos>
          <Encoding>8</Encoding>
          <FileName>C:\Users\KJS\Documents\DV\TC375_STUDY\Main_Study\Libraries\iLLD\TC37A\Tricore\I2c\I2c\IfxI2c_I2c.c</FileName>
          <FileType>1</FileType>
@@ -69,7 +69,7 @@
         </__.6>
         <__.7>
          <BookmarkList></BookmarkList>
-         <CaretPos>6380</CaretPos>
+         <CaretPos>7481</CaretPos>
          <Encoding>8</Encoding>
          <FileName>C:\Users\KJS\Documents\DV\TC375_STUDY\Main_Study\Libraries\iLLD\TC37A\Tricore\Cpu\Trap\IfxCpu_Trap.c</FileName>
          <FileType>1</FileType>
@@ -529,10 +529,6 @@
       </FindInFilesDialogData>
      </GlobalData>
      <History>
-      <ComboBox>
-       <ComboBoxes>
-       </ComboBoxes>
-      </ComboBox>
      </History>
      <Options>
       <CallstackWindow>

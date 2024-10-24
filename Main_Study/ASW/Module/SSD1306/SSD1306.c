@@ -142,13 +142,47 @@ static const Module_I2C_Config ssd1306_config = {
 
 static Module_I2C_Inst ssd1306_inst;
 
+static void _SetPixel(uint8 *buffer, uint8 x, uint8 y, uint8 bValue)
+{
+    const uint8 page = y / 8;
+    const uint8 seg = x;
+    const uint8 byte = y % 8;
+
+    *(buffer + (SSD1306_MAX_SEG * page) + seg) |= (0x01 & bValue) << byte;
+}
+
+static void _SetDisplay(uint8 *buffer, uint8 *data)
+{
+    int x = 0;
+    int y = 0;
+    for (int i=0; i < 128 * 64 * 8; i++) {
+        _SetPixel(buffer, x, y, data[i / 8] >> i % 8);
+        x++;
+        if (x >= 128 * 8) {
+            x = 0;
+            y++;
+        }
+    }
+}
+
 static void TestDisplay(void)
 {
-    uint8 data[SSD1306_MAX_PAGE][SSD1306_I2C_BUFF_MAX] = {
-        {0xFF,0xFF,0xFF,0xFF, 0x00,0x00,0x00,0x00},
-        {0x00,0x00,0x00,0x00, 0xFF,0xFF,0xFF,0xFF}
-    };
+const uint8 MarilynMonroe[] = {
+};
+    uint8 data[SSD1306_MAX_PAGE * SSD1306_I2C_BUFF_MAX] = {0};
+    uint8 x = 0;
+    uint8 y = 0;
+    uint8 value = 1;
+
+#if 1
+    _SetDisplay(data, MarilynMonroe);
     SSD1306_SetDisplay(data, 0, SSD1306_MAX_PAGE, 0, SSD1306_MAX_SEG);
+#else
+    while (1) {
+        _SetPixel(data, x, y, value);
+        SSD1306_SetDisplay(data, 0, SSD1306_MAX_PAGE, 0, SSD1306_MAX_SEG);
+    }
+#endif
 }
 
 void Init_SSD1306(void)
