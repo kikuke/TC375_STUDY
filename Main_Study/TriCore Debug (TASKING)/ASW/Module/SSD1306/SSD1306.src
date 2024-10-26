@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc22140a --dep-file=SSD1306.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Configurations -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\ASW\\\\Module\\\\SSD1306 -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\ASW\\\\Module\\\\I2C -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\I2c -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o ASW/Module/SSD1306/SSD1306.src ../ASW/Module/SSD1306/SSD1306.c"
+	.compiler_invocation	"ctc -f cc4120a --dep-file=SSD1306.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Configurations -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\ASW\\\\Module\\\\SSD1306 -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\ASW\\\\Module\\\\I2C -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\Std -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c -IC:\\\\Users\\\\KJS\\\\Documents\\\\DV\\\\TC375_STUDY\\\\Main_Study\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\I2c\\\\I2c -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o ASW/Module/SSD1306/SSD1306.src ../ASW/Module/SSD1306/SSD1306.c"
 	.compiler_name		"ctc"
 	;source	'../ASW/Module/SSD1306/SSD1306.c'
 
@@ -128,7 +128,7 @@ TestDisplay:	.type	func
 	lea	a15,[a15]0
 .L686:
 	lea	a2,[a10]0
-	lea	a4,1023
+	lea	a4,2047
 .L5:
 	ld.bu	d15,[a15+]
 	st.b	[a2+],d15
@@ -138,19 +138,19 @@ TestDisplay:	.type	func
 	lea	a15,[a15]@los(.3.ini)
 	lea	a15,[a15]0
 .L688:
-	lea	a2,[a10]1024
-	lea	a4,2047
+	lea	a2,[a10]2048
+	lea	a4,1023
 .L6:
 	ld.bu	d15,[a15+]
 	st.b	[a2+],d15
 	loop	a4,.L6
 .L689:
-	lea	a4,[a10]1024
+	lea	a4,[a10]0
 .L690:
-	lea	a5,[a10]0
+	lea	a5,[a10]2048
 	call	_SetDisplay
 .L691:
-	lea	a4,[a10]1024
+	lea	a4,[a10]0
 .L692:
 	mov	d4,#0
 .L693:
@@ -1078,7 +1078,7 @@ ssd1306_config:	.type	object
 	.byte	8
 	.space	3
 	.word	1232348160
-	.half	60
+	.half	61
 	.space	2
 	.sdecl	'.bss.SSD1306.ssd1306_inst',data,cluster('ssd1306_inst')
 	.sect	'.bss.SSD1306.ssd1306_inst'
@@ -1089,349 +1089,220 @@ ssd1306_inst:	.type	object
 	.sdecl	'.rodata.SSD1306..2.ini',data,rom
 	.sect	'.rodata.SSD1306..2.ini'
 .2.ini:	.type	object
-	.size	.2.ini,1024
-	.byte	3,255,131,3
-	.byte	255,252,6
-	.space	2
-	.byte	63,255,255,255,255,255,193,7
-	.byte	255,193,63,255
-	.byte	252,198
-	.space	1
-	.byte	1,63,255,255
-	.byte	255,255,255
-	.space	1
-	.byte	7,255,240,14
-	.byte	228,255,231
-	.space	1
-	.byte	1,63,255,255
-	.byte	255,255,254
-	.space	1
-	.byte	7,255,224,12
-	.byte	82,254,70
-	.space	1
-	.byte	124,255,252,7,253,255,254,112
-	.byte	7,255,240
-	.space	1
-	.byte	63,254,7,255,254,255,224,7
-	.byte	156,63,253,248,3,255,248,15
-	.byte	255,254,7,255,254,127,192,31
-	.byte	254,31,253,252,3,255,248,15
-	.byte	255,255,199,240,127,127,128,63
-	.byte	252,15,251,254,3,255,248,15
-	.byte	255,255,135,128,15,31,128,63
-	.byte	254,79,251,255,3,255,252,159
-	.byte	255,241,128
-	.space	1
-	.byte	1,255,128,63,255,231,251,255
-	.byte	3,255,255,159
-	.byte	255,241,128
-	.space	2
-	.byte	255,128,63,255
-	.byte	232,255,255
-	.space	2
-	.byte	15,93,255,253
-	.byte	128
-	.space	2
-	.byte	125,135,12,255
-	.byte	255,255,255
-	.space	1
-	.byte	14,30,31,255
-	.byte	255,128
-	.space	2
-	.byte	124,15,224,63
-	.byte	225,227,255
-	.space	2
-	.byte	14,31,255,239
-	.byte	128
-	.space	2
-	.byte	63,222,224,7,224,1,255,4
-	.space	1
-	.byte	8,175,255,255
-	.byte	128
-	.space	3
-	.byte	127,224,15,192
-	.byte	1,254
-	.space	3
-	.byte	79,255,240
-	.space	4
-	.byte	127,236,7,224
-	.byte	1,248
-	.space	1
-	.byte	2
-	.space	5
-	.byte	255
-	.space	2
-	.byte	191,236,7,240
-	.byte	47,255
-	.space	1
-	.byte	31
-	.space	4
-	.byte	15,255,128
-	.space	2
-	.byte	60,31,240,31
-	.byte	255
-	.space	1
-	.byte	14
-	.space	4
-	.byte	15,255,192,31,248,3,255,241
-	.byte	15,255
-	.space	1
-	.byte	3,96
-	.space	2
-	.byte	3,143,255,192,31,248,7,254
-	.byte	243,143,255
-	.space	1
-	.byte	3,224
-	.space	2
-	.byte	3,195,248
-	.space	1
-	.byte	15,252,3,255
-	.byte	248,207,255
-	.space	1
-	.byte	14
-	.space	3
-	.byte	3,207,255,240
-	.space	1
-	.byte	119,224,255,248
-	.byte	15,247
-	.space	1
-	.byte	1
-	.space	3
-	.byte	193,141,255,240
-	.space	1
-	.byte	31,240,255,248
-	.byte	7,64
-	.space	1
-	.byte	1,224
-	.space	1
-	.byte	1,96,15,255
-	.byte	240
-	.space	1
-	.byte	63,255,255,200
-	.byte	3,192
-	.space	4
-	.byte	3,224,15,255
-	.byte	224
-	.space	1
-	.byte	63,255,199,240
-	.byte	3,192
-	.space	4
-	.byte	3,224,7,255
-	.byte	224
-	.space	1
-	.byte	127,255,255,252
-	.byte	3,240
-	.space	4
-	.byte	1,192
-	.space	1
-	.byte	249
-	.space	2
-	.byte	127,255,255,254
-	.byte	1,248
-	.space	5
-	.byte	224
-	.space	1
-	.byte	224,64
-	.space	1
-	.byte	127,255,254,254
-	.space	1
-	.byte	224
-	.space	6
-	.byte	7,192,192
-	.space	1
-	.byte	127,255,253,192
-	.byte	1,224
-	.space	4
-	.byte	3,192,14,120
-	.byte	128
-	.space	1
-	.byte	255,255,123,192
-	.byte	1,255
-	.space	3
-	.byte	28,7,252,62
-	.byte	31
-	.space	1
-	.byte	12,255,255,118
-	.space	1
-	.byte	1,224
-	.space	4
-	.byte	15,249,254,8
-	.space	1
-	.byte	29,255,254,100
-	.byte	24,7,128
-	.space	3
-	.byte	128,15,255,254
-	.byte	8
-	.space	1
-	.byte	127,255,252,193
-	.byte	24,7,230
-	.space	2
-	.byte	3
-	.space	1
-	.byte	31,255,255,158
-	.space	1
-	.byte	255,255,240
-	.space	2
-	.byte	31,192
-	.space	2
-	.byte	6
-	.space	1
-	.byte	63,255,255,223,28,255,255,224
-	.space	2
-	.byte	111,224
-	.space	2
-	.byte	4,2,31,143,255,207,157,254
-	.byte	239,192
-	.space	2
-	.byte	15,224
-	.space	2
-	.byte	8,7,143,143,251,239,207,255
-	.byte	223,128
-	.space	2
-	.byte	31,224
-	.space	1
-	.byte	6,8,31,132,143,255,247,231
-	.byte	255,223,128
-	.space	3
-	.byte	1,3,143
-	.space	1
-	.byte	15
-	.space	1
-	.byte	7,253,255,241
-	.byte	255,159
-	.space	4
-	.byte	3,3,248
-	.space	1
-	.byte	6
-	.space	1
-	.byte	15,254,255,255
-	.byte	255,63
-	.space	5
-	.byte	3,249
-	.space	3
-	.byte	207,191,255,255
-	.byte	254,254
-	.space	5
-	.byte	1,248
-	.space	1
-	.byte	4,16,255,143,255,253,255,254
-	.space	6
-	.byte	240
-	.space	1
-	.byte	8,56,255,199,255,253,255,252
-	.space	8
-	.byte	31,240,63,227,255,255,255,252
-	.space	8
-	.byte	31,128,63,131,159,255,255,248
-	.space	8
-	.byte	7
-	.space	1
-	.byte	63
-	.space	1
-	.byte	207,255,255,240
-	.space	10
-	.byte	238
-	.space	1
-	.byte	99,255,255,241
-	.space	10
-	.byte	240
-	.space	1
-	.byte	112,255,255,225
-	.space	9
-	.byte	3,248
-	.space	1
-	.byte	56,63,255,226
-	.space	5
-	.byte	7,216
-	.space	2
-	.byte	243,216,1,31
-	.byte	15,255,194
-	.space	5
-	.byte	31,200
-	.space	1
-	.byte	7,247,128,2,7,231,255,132
-	.space	5
-	.byte	255,191,244,7,255,128,3,131
-	.byte	255,255,132
-	.space	5
-	.byte	255,255,254,7,255,128,3,128
-	.byte	255,255,4
-	.space	5
-	.byte	255,255,255,2,59,224,1,128
-	.byte	31,238,8
-	.space	5
-	.byte	255,255,252
-	.space	1
-	.byte	63,240
-	.space	2
-	.byte	79,238
-	.space	1
-	.byte	64
-	.space	4
-	.byte	255,254
-	.space	2
-	.byte	63,176
-	.space	2
-	.byte	63,228,8,192
-	.space	3
-	.byte	1,255,254
-	.space	1
-	.byte	1,255,144
-	.space	2
-	.byte	15,224,8,128
-	.byte	24
-	.space	2
-	.byte	1,255,254
-	.space	2
-	.byte	125,136
-	.space	4
-	.byte	16,128,62
-	.space	2
-	.byte	3,255,254
-	.space	2
-	.byte	62
-	.space	7
-	.byte	255,240
-	.space	1
-	.byte	3,255,242
-	.space	2
-	.byte	31,128
-	.space	5
-	.byte	1,255,255,160
-	.byte	7,255,224
-	.space	2
-	.byte	255,128
-	.space	5
-	.byte	7,255,255,240
-	.byte	31,255,240
-	.space	2
-	.byte	195
-	.space	6
-	.byte	7,252,192
-	.space	1
-	.byte	63,255,255
-	.space	2
-	.byte	158,64
-	.space	5
-	.byte	7,252
-	.space	1
-	.byte	1,255,127,255
-	.space	2
-	.byte	63
-	.space	6
-	.byte	63,252
-	.space	1
-	.byte	31,255,31,252
-	.space	2
-	.byte	126
-	.space	6
-	.byte	127,255,241,255
-	.byte	255
+	.size	.2.ini,2048
+	.space	2048
 	.sdecl	'.rodata.SSD1306..3.ini',data,rom
 	.sect	'.rodata.SSD1306..3.ini'
 .3.ini:	.type	object
-	.size	.3.ini,2048
-	.space	2048
+	.size	.3.ini,1024
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,241,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,241,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,241,255,255
+	.byte	255,255,255,255
+	.byte	128
+	.space	1
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,254
+	.space	1
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,224,127,255
+	.byte	3,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,31,255,255
+	.byte	252,127,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	252,127,255,255,255,255,255,255
+	.byte	255,255,255,255,248,255,255,255
+	.byte	252,127,255,255,255,255,255,255
+	.byte	255,255,255,255,248,255,255,255
+	.byte	255,143,255,255,255,255,227,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,143,255,255,255,255,227,255
+	.byte	255,255,255,255,199,255,255,248
+	.byte	255,143,255,255,255,255,227,255
+	.byte	255,255,255,255,199,255,255,199
+	.byte	255,129,255,255,255,255,227,255
+	.byte	255,255,255,255,199,255,255,199
+	.byte	255,129,255,255,255,255,227,255
+	.byte	255,255,255,255,192,255,255,199
+	.space	1
+	.byte	1,255,255,255,255,31,255,255
+	.byte	255,255,255,192
+	.byte	255,255,248
+	.space	1
+	.byte	1,255,255,255,255,31,143,255
+	.byte	255,255,255,192
+	.byte	255,255,248
+	.space	1
+	.byte	1,255,255,255,255,31,143,255
+	.byte	255,255,255,255
+	.byte	255,255,255
+	.space	1
+	.byte	1,255,255,255,255,28,112,63
+	.byte	255,255,255,199,255,255,255,28
+	.byte	1,255,255,255,248,31,254,63
+	.byte	255,255,255,199,255,255,255,28
+	.byte	1,255,255,255,248,31,254,63
+	.byte	255,255,254,7,255,255,248,28
+	.byte	1,255,255,255,248,255,254,63
+	.byte	255,255,254,63
+	.byte	255,255,255
+	.space	1
+	.byte	1,255,255,255,248,255,254,63
+	.byte	255,255,254,63
+	.byte	255,255,255
+	.space	1
+	.byte	1,255,255,255,248,255,254,63
+	.byte	255,255,254,63
+	.byte	252,127,248
+	.space	1
+	.byte	1,255,255,255,255,227,254,7
+	.byte	255,255,255,199
+	.byte	255,255,192
+	.space	2
+	.byte	63,255,255,248,255,254,7,255
+	.byte	255,255,199,255
+	.byte	255,192
+	.space	2
+	.byte	63,255,255,248,255,254,7,255
+	.byte	255,255,192,255
+	.byte	240,7
+	.space	2
+	.byte	56,31,255,248,31,254,7,255
+	.byte	255,255,255
+	.space	6
+	.byte	31,255,255
+	.space	2
+	.byte	7,255,255,255
+	.byte	255
+	.space	6
+	.byte	31,255,255
+	.space	2
+	.byte	7,255,255,129
+	.byte	255
+	.space	4
+	.byte	1,248,31,255
+	.byte	255,224
+	.space	1
+	.byte	63,255,255,128
+	.space	2
+	.byte	126
+	.space	1
+	.byte	224,127,248,3,255,255,252,1
+	.byte	255,255,255,128
+	.space	2
+	.byte	126
+	.space	1
+	.byte	224,127,248,3,255,255,252,1
+	.byte	255,255,255,129
+	.byte	255,224
+	.space	1
+	.byte	63,252,126
+	.space	1
+	.byte	31,255,255,255,254,63,255,252
+	.byte	1,255,224,1,255,252,126,7
+	.byte	255,255,255,252,124,63,255,252
+	.space	1
+	.byte	7,224,1,255
+	.byte	252
+	.space	1
+	.byte	7,255,255,255,252,112,63,255
+	.byte	255,128
+	.space	2
+	.byte	15,255,252
+	.space	2
+	.byte	255,255,255,3,129,255,255,255
+	.byte	254
+	.space	2
+	.byte	15,255,252
+	.space	2
+	.byte	31,255,255,3,241,255,255,255
+	.byte	254
+	.space	2
+	.byte	15,255,252,1,248,31,255,248
+	.byte	255,241,255,255
+	.byte	255,255,255
+	.space	1
+	.byte	15,255,255,255,255,31,254,7
+	.byte	252,113,255,255
+	.byte	255,255,255
+	.space	1
+	.byte	15,255,255,255,255,31,254,7
+	.byte	255,241,255,255,255,255,255,252
+	.byte	127,255,255,255,255,31,128,63
+	.byte	227,255,255,255,255,255,255,252
+	.byte	127,255,255,255
+	.byte	255,224
+	.space	2
+	.byte	31,143,255,255,255,255,255,252
+	.byte	127,255,255,255
+	.byte	255,224
+	.space	1
+	.byte	7,255,15,255,255,255,255,255
+	.byte	255,143,255,255
+	.byte	254,63,224
+	.space	1
+	.byte	7,252,127,255,255,255,255,255
+	.byte	255,143,255,255
+	.byte	254,63,252
+	.space	1
+	.byte	7,3,255,255,255,255,255,255
+	.byte	255,255,255,255,254,63,252,15
+	.byte	255,3,255,255,255,255,255,255
+	.byte	252,113,255,255,240,63,252,15
+	.byte	255,31,255,255,255,255,255,255
+	.byte	227,241,255,255,241,255,255,129
+	.byte	248,255,255,255,255,255,255,255
+	.byte	227,241,255,255,241,255,255,129
+	.byte	248,255,255,255,255,255,255,255
+	.byte	227,254,63,255
+	.byte	241,255,252
+	.space	1
+	.byte	7,255,255,255,255,255,255,255
+	.byte	227,255,199,255,240,63,224,1
+	.byte	255,255,255,255,255,255,255,255
+	.byte	227,255,199,255,240,63,224,1
+	.byte	255,255,255,255,255,255,255,255
+	.byte	252,126
+	.space	1
+	.byte	31,240
+	.space	2
+	.byte	1,255,255,255,255,255,255,255
+	.byte	255,252
+	.space	6
+	.byte	15,255,255,255,255,255,255,255
+	.byte	255,252
+	.space	6
+	.byte	15,255,255,255,255,255,255,255
+	.byte	255,224
+	.space	2
+	.byte	255,255,199,252,15,255,255,255
+	.byte	255,255,255,255,255,28,112,7
+	.byte	255,255,192,255,129,255,255,255
+	.byte	255,255,255,255,255,28,112,7
+	.byte	255,255,192,255,129,255,255,255
+	.byte	255,255,255,255
+	.byte	255,224
+	.space	1
+	.byte	63,255,255,248,227,142,63,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255
+	.space	1
+	.byte	1,255,255,255,255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255,255
+	.space	1
+	.byte	1,255,255,255,255,255,255,255
+	.byte	255,255,255,255,255,255,255,255
+	.byte	255,255,255,255
+	.byte	255,255
 	.sdecl	'.rodata.SSD1306..4.ini',data,rom
 	.sect	'.rodata.SSD1306..4.ini'
 .4.ini:	.type	object
@@ -4546,7 +4417,7 @@ ssd1306_inst:	.type	object
 	.byte	19,0,0
 .L286:
 	.byte	28
-	.byte	'eSSD1306_Packet_T',0,18,20,14,1,16
+	.byte	'eSSD1306_Packet_T',0,18,29,14,1,16
 	.byte	'SSD1306_Packet_COMMAND',0,0,16
 	.byte	'SSD1306_Packet_DATA',0,1,0,25
 	.word	640
@@ -4568,16 +4439,16 @@ ssd1306_inst:	.type	object
 .L319:
 	.byte	25
 	.word	640
-	.byte	18,128,8
-	.word	640
-	.byte	19,255,7,0
-.L330:
-	.byte	25
-	.word	19312
-.L332:
+.L333:
 	.byte	18,128,16
 	.word	640
-	.byte	19,255,15,0,29
+	.byte	19,255,15,0,18,128,8
+	.word	640
+	.byte	19,255,7,0
+.L335:
+	.byte	25
+	.word	19323
+	.byte	29
 	.byte	'__wchar_t',0,19,1,1
 	.word	19087
 	.byte	29
@@ -22268,7 +22139,7 @@ ssd1306_inst:	.type	object
 	.byte	'Module_I2C_Inst',0,14,17,3
 	.word	17855
 	.byte	29
-	.byte	'SSD1306_Packet_T',0,18,23,3
+	.byte	'SSD1306_Packet_T',0,18,32,3
 	.word	19206
 .L337:
 	.byte	25
@@ -22356,7 +22227,7 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'Init_SSD1306',0,1,252,1,6,1,1,1
+	.byte	'Init_SSD1306',0,1,136,2,6,1,1,1
 	.word	.L29,.L212,.L28
 	.byte	4
 	.word	.L29,.L212
@@ -22379,7 +22250,7 @@ ssd1306_inst:	.type	object
 .L417:
 	.byte	5,15,7,0,5,2
 	.word	.L29
-	.byte	3,253,1,1,5,30,9
+	.byte	3,137,2,1,5,30,9
 	.half	.L418-.L29
 	.byte	1,5,25,9
 	.half	.L419-.L418
@@ -22411,32 +22282,32 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SSD1306_SetDisplay',0,1,133,2,6,1,1,1
+	.byte	'SSD1306_SetDisplay',0,1,145,2,6,1,1,1
 	.word	.L31,.L213,.L30
 	.byte	4
-	.byte	'buff',0,1,133,2,32
+	.byte	'buff',0,1,145,2,32
 	.word	.L214,.L215
 	.byte	4
-	.byte	'startPage',0,1,133,2,44
+	.byte	'startPage',0,1,145,2,44
 	.word	.L216,.L217
 	.byte	4
-	.byte	'pageLen',0,1,133,2,61
+	.byte	'pageLen',0,1,145,2,61
 	.word	.L216,.L218
 	.byte	4
-	.byte	'startColumn',0,1,133,2,76
+	.byte	'startColumn',0,1,145,2,76
 	.word	.L216,.L219
 	.byte	4
-	.byte	'columnLen',0,1,133,2,95
+	.byte	'columnLen',0,1,145,2,95
 	.word	.L216,.L220
 	.byte	5
 	.word	.L31,.L213
 	.byte	6
-	.byte	'endPage',0,1,135,2,15
+	.byte	'endPage',0,1,147,2,15
 	.word	.L221,.L222
 	.byte	5
 	.word	.L223,.L224
 	.byte	6
-	.byte	'i',0,1,137,2,14
+	.byte	'i',0,1,149,2,14
 	.word	.L225,.L226
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SSD1306_SetDisplay')
@@ -22458,7 +22329,7 @@ ssd1306_inst:	.type	object
 .L426:
 	.byte	5,6,7,0,5,2
 	.word	.L31
-	.byte	3,132,2,1,5,35,9
+	.byte	3,144,2,1,5,35,9
 	.half	.L427-.L31
 	.byte	3,2,1,5,16,9
 	.half	.L223-.L427
@@ -22504,17 +22375,17 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SSD1306_ClearDisplay',0,1,144,2,6,1,1,1
+	.byte	'SSD1306_ClearDisplay',0,1,156,2,6,1,1,1
 	.word	.L33,.L227,.L32
 	.byte	4
 	.word	.L33,.L227
 	.byte	5
-	.byte	'data',0,1,146,2,11
+	.byte	'data',0,1,158,2,11
 	.word	.L228,.L229
 	.byte	4
 	.word	.L230,.L231
 	.byte	5
-	.byte	'i',0,1,149,2,14
+	.byte	'i',0,1,161,2,14
 	.word	.L225,.L232
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SSD1306_ClearDisplay')
@@ -22535,7 +22406,7 @@ ssd1306_inst:	.type	object
 .L431:
 	.byte	5,6,7,0,5,2
 	.word	.L33
-	.byte	3,143,2,1,5,40,9
+	.byte	3,155,2,1,5,40,9
 	.half	.L359-.L33
 	.byte	3,2,1,5,38,9
 	.half	.L432-.L359
@@ -22585,13 +22456,13 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetPageAndColumnPosition',0,1,155,2,13,1,1
+	.byte	'SetPageAndColumnPosition',0,1,167,2,13,1,1
 	.word	.L35,.L233,.L34
 	.byte	4
-	.byte	'page',0,1,155,2,44
+	.byte	'page',0,1,167,2,44
 	.word	.L216,.L234
 	.byte	4
-	.byte	'column',0,1,155,2,56
+	.byte	'column',0,1,167,2,56
 	.word	.L216,.L235
 	.byte	5
 	.word	.L35,.L233
@@ -22614,7 +22485,7 @@ ssd1306_inst:	.type	object
 .L443:
 	.byte	5,13,7,0,5,2
 	.word	.L35
-	.byte	3,154,2,1,5,29,9
+	.byte	3,166,2,1,5,29,9
 	.half	.L362-.L35
 	.byte	3,2,1,5,36,9
 	.half	.L361-.L362
@@ -22646,7 +22517,7 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'_DafaultSoftwareInit',0,1,162,2,13,1,1
+	.byte	'_DafaultSoftwareInit',0,1,174,2,13,1,1
 	.word	.L37,.L236,.L36
 	.byte	4
 	.word	.L37,.L236
@@ -22669,7 +22540,7 @@ ssd1306_inst:	.type	object
 .L449:
 	.byte	5,23,7,0,5,2
 	.word	.L37
-	.byte	3,163,2,1,5,22,9
+	.byte	3,175,2,1,5,22,9
 	.half	.L450-.L37
 	.byte	3,1,1,5,25,9
 	.half	.L451-.L450
@@ -22717,15 +22588,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetContrastControl',0,1,184,2,13,1,1
+	.byte	'SetContrastControl',0,1,196,2,13,1,1
 	.word	.L39,.L237,.L38
 	.byte	4
-	.byte	'value',0,1,184,2,38
+	.byte	'value',0,1,196,2,38
 	.word	.L216,.L238
 	.byte	5
 	.word	.L39,.L237
 	.byte	6
-	.byte	'cmd',0,1,186,2,11
+	.byte	'cmd',0,1,198,2,11
 	.word	.L239,.L240
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetContrastControl')
@@ -22747,7 +22618,7 @@ ssd1306_inst:	.type	object
 .L466:
 	.byte	5,13,7,0,5,2
 	.word	.L39
-	.byte	3,183,2,1,5,20,9
+	.byte	3,195,2,1,5,20,9
 	.half	.L364-.L39
 	.byte	3,2,1,5,18,9
 	.half	.L467-.L364
@@ -22783,15 +22654,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'EntireDisplayOn',0,1,191,2,13,1,1
+	.byte	'EntireDisplayOn',0,1,203,2,13,1,1
 	.word	.L41,.L241,.L40
 	.byte	4
-	.byte	'bIgCon',0,1,191,2,35
+	.byte	'bIgCon',0,1,203,2,35
 	.word	.L216,.L242
 	.byte	5
 	.word	.L41,.L241
 	.byte	6
-	.byte	'cmd',0,1,193,2,11
+	.byte	'cmd',0,1,205,2,11
 	.word	.L243,.L244
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('EntireDisplayOn')
@@ -22813,7 +22684,7 @@ ssd1306_inst:	.type	object
 .L475:
 	.byte	5,13,7,0,5,2
 	.word	.L41
-	.byte	3,190,2,1,5,20,9
+	.byte	3,202,2,1,5,20,9
 	.half	.L366-.L41
 	.byte	3,2,1,5,18,9
 	.half	.L476-.L366
@@ -22853,15 +22724,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetNormalInverseDisplay',0,1,198,2,13,1,1
+	.byte	'SetNormalInverseDisplay',0,1,210,2,13,1,1
 	.word	.L43,.L245,.L42
 	.byte	4
-	.byte	'bInverse',0,1,198,2,43
+	.byte	'bInverse',0,1,210,2,43
 	.word	.L216,.L246
 	.byte	5
 	.word	.L43,.L245
 	.byte	6
-	.byte	'cmd',0,1,200,2,11
+	.byte	'cmd',0,1,212,2,11
 	.word	.L243,.L247
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetNormalInverseDisplay')
@@ -22883,7 +22754,7 @@ ssd1306_inst:	.type	object
 .L486:
 	.byte	5,13,7,0,5,2
 	.word	.L43
-	.byte	3,197,2,1,5,20,9
+	.byte	3,209,2,1,5,20,9
 	.half	.L368-.L43
 	.byte	3,2,1,5,18,9
 	.half	.L487-.L368
@@ -22923,15 +22794,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetDisplayOnOff',0,1,205,2,13,1,1
+	.byte	'SetDisplayOnOff',0,1,217,2,13,1,1
 	.word	.L45,.L248,.L44
 	.byte	4
-	.byte	'bOn',0,1,205,2,35
+	.byte	'bOn',0,1,217,2,35
 	.word	.L216,.L249
 	.byte	5
 	.word	.L45,.L248
 	.byte	6
-	.byte	'cmd',0,1,207,2,11
+	.byte	'cmd',0,1,219,2,11
 	.word	.L243,.L250
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetDisplayOnOff')
@@ -22953,7 +22824,7 @@ ssd1306_inst:	.type	object
 .L497:
 	.byte	5,13,7,0,5,2
 	.word	.L45
-	.byte	3,204,2,1,5,20,9
+	.byte	3,216,2,1,5,20,9
 	.half	.L370-.L45
 	.byte	3,2,1,5,18,9
 	.half	.L498-.L370
@@ -22993,15 +22864,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetLowColStartAddrPageMode',0,1,138,3,13,1,1
+	.byte	'SetLowColStartAddrPageMode',0,1,150,3,13,1,1
 	.word	.L47,.L251,.L46
 	.byte	4
-	.byte	'nibble',0,1,138,3,46
+	.byte	'nibble',0,1,150,3,46
 	.word	.L216,.L252
 	.byte	5
 	.word	.L47,.L251
 	.byte	6
-	.byte	'cmd',0,1,140,3,11
+	.byte	'cmd',0,1,152,3,11
 	.word	.L243,.L253
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetLowColStartAddrPageMode')
@@ -23023,7 +22894,7 @@ ssd1306_inst:	.type	object
 .L508:
 	.byte	5,13,7,0,5,2
 	.word	.L47
-	.byte	3,137,3,1,5,20,9
+	.byte	3,149,3,1,5,20,9
 	.half	.L372-.L47
 	.byte	3,2,1,5,18,9
 	.half	.L509-.L372
@@ -23061,15 +22932,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetHighColStartAddrPageMode',0,1,145,3,13,1,1
+	.byte	'SetHighColStartAddrPageMode',0,1,157,3,13,1,1
 	.word	.L49,.L254,.L48
 	.byte	4
-	.byte	'nibble',0,1,145,3,47
+	.byte	'nibble',0,1,157,3,47
 	.word	.L216,.L255
 	.byte	5
 	.word	.L49,.L254
 	.byte	6
-	.byte	'cmd',0,1,147,3,11
+	.byte	'cmd',0,1,159,3,11
 	.word	.L243,.L256
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetHighColStartAddrPageMode')
@@ -23091,7 +22962,7 @@ ssd1306_inst:	.type	object
 .L518:
 	.byte	5,13,7,0,5,2
 	.word	.L49
-	.byte	3,144,3,1,5,20,9
+	.byte	3,156,3,1,5,20,9
 	.half	.L374-.L49
 	.byte	3,2,1,5,18,9
 	.half	.L519-.L374
@@ -23129,15 +23000,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetPageStartForPageMode',0,1,184,3,13,1,1
+	.byte	'SetPageStartForPageMode',0,1,196,3,13,1,1
 	.word	.L51,.L257,.L50
 	.byte	4
-	.byte	'page',0,1,184,3,43
+	.byte	'page',0,1,196,3,43
 	.word	.L216,.L258
 	.byte	5
 	.word	.L51,.L257
 	.byte	6
-	.byte	'cmd',0,1,186,3,11
+	.byte	'cmd',0,1,198,3,11
 	.word	.L243,.L259
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetPageStartForPageMode')
@@ -23159,7 +23030,7 @@ ssd1306_inst:	.type	object
 .L528:
 	.byte	5,13,7,0,5,2
 	.word	.L51
-	.byte	3,183,3,1,5,20,9
+	.byte	3,195,3,1,5,20,9
 	.half	.L376-.L51
 	.byte	3,2,1,5,18,9
 	.half	.L529-.L376
@@ -23199,15 +23070,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetDisplayStartLine',0,1,191,3,13,1,1
+	.byte	'SetDisplayStartLine',0,1,203,3,13,1,1
 	.word	.L53,.L260,.L52
 	.byte	4
-	.byte	'line',0,1,191,3,39
+	.byte	'line',0,1,203,3,39
 	.word	.L216,.L261
 	.byte	5
 	.word	.L53,.L260
 	.byte	6
-	.byte	'cmd',0,1,193,3,11
+	.byte	'cmd',0,1,205,3,11
 	.word	.L243,.L262
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetDisplayStartLine')
@@ -23229,7 +23100,7 @@ ssd1306_inst:	.type	object
 .L539:
 	.byte	5,13,7,0,5,2
 	.word	.L53
-	.byte	3,190,3,1,5,20,9
+	.byte	3,202,3,1,5,20,9
 	.half	.L378-.L53
 	.byte	3,2,1,5,18,9
 	.half	.L540-.L378
@@ -23267,15 +23138,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetSegmentReMap',0,1,198,3,13,1,1
+	.byte	'SetSegmentReMap',0,1,210,3,13,1,1
 	.word	.L55,.L263,.L54
 	.byte	4
-	.byte	'b127',0,1,198,3,35
+	.byte	'b127',0,1,210,3,35
 	.word	.L216,.L264
 	.byte	5
 	.word	.L55,.L263
 	.byte	6
-	.byte	'cmd',0,1,200,3,11
+	.byte	'cmd',0,1,212,3,11
 	.word	.L243,.L265
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetSegmentReMap')
@@ -23297,7 +23168,7 @@ ssd1306_inst:	.type	object
 .L549:
 	.byte	5,13,7,0,5,2
 	.word	.L55
-	.byte	3,197,3,1,5,20,9
+	.byte	3,209,3,1,5,20,9
 	.half	.L380-.L55
 	.byte	3,2,1,5,18,9
 	.half	.L550-.L380
@@ -23337,15 +23208,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetMultiplexRatio',0,1,205,3,13,1,1
+	.byte	'SetMultiplexRatio',0,1,217,3,13,1,1
 	.word	.L57,.L266,.L56
 	.byte	4
-	.byte	'mux',0,1,205,3,37
+	.byte	'mux',0,1,217,3,37
 	.word	.L216,.L267
 	.byte	5
 	.word	.L57,.L266
 	.byte	6
-	.byte	'cmd',0,1,207,3,11
+	.byte	'cmd',0,1,219,3,11
 	.word	.L239,.L268
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetMultiplexRatio')
@@ -23367,7 +23238,7 @@ ssd1306_inst:	.type	object
 .L560:
 	.byte	5,13,7,0,5,2
 	.word	.L57
-	.byte	3,204,3,1,5,20,9
+	.byte	3,216,3,1,5,20,9
 	.half	.L382-.L57
 	.byte	3,2,1,5,18,9
 	.half	.L561-.L382
@@ -23405,15 +23276,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetComOutputScanDirection',0,1,215,3,13,1,1
+	.byte	'SetComOutputScanDirection',0,1,227,3,13,1,1
 	.word	.L59,.L269,.L58
 	.byte	4
-	.byte	'bRemap',0,1,215,3,45
+	.byte	'bRemap',0,1,227,3,45
 	.word	.L216,.L270
 	.byte	5
 	.word	.L59,.L269
 	.byte	6
-	.byte	'cmd',0,1,217,3,11
+	.byte	'cmd',0,1,229,3,11
 	.word	.L243,.L271
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetComOutputScanDirection')
@@ -23435,7 +23306,7 @@ ssd1306_inst:	.type	object
 .L570:
 	.byte	5,13,7,0,5,2
 	.word	.L59
-	.byte	3,214,3,1,5,20,9
+	.byte	3,226,3,1,5,20,9
 	.half	.L384-.L59
 	.byte	3,2,1,5,18,9
 	.half	.L571-.L384
@@ -23477,15 +23348,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetDisplayOffset',0,1,222,3,13,1,1
+	.byte	'SetDisplayOffset',0,1,234,3,13,1,1
 	.word	.L61,.L272,.L60
 	.byte	4
-	.byte	'com',0,1,222,3,36
+	.byte	'com',0,1,234,3,36
 	.word	.L216,.L273
 	.byte	5
 	.word	.L61,.L272
 	.byte	6
-	.byte	'cmd',0,1,224,3,11
+	.byte	'cmd',0,1,236,3,11
 	.word	.L239,.L274
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetDisplayOffset')
@@ -23507,7 +23378,7 @@ ssd1306_inst:	.type	object
 .L582:
 	.byte	5,13,7,0,5,2
 	.word	.L61
-	.byte	3,221,3,1,5,20,9
+	.byte	3,233,3,1,5,20,9
 	.half	.L386-.L61
 	.byte	3,2,1,5,18,9
 	.half	.L583-.L386
@@ -23545,15 +23416,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetComPinsHardwareConfig',0,1,232,3,13,1,1
+	.byte	'SetComPinsHardwareConfig',0,1,244,3,13,1,1
 	.word	.L63,.L275,.L62
 	.byte	4
-	.byte	'config',0,1,232,3,44
+	.byte	'config',0,1,244,3,44
 	.word	.L216,.L276
 	.byte	5
 	.word	.L63,.L275
 	.byte	6
-	.byte	'cmd',0,1,234,3,11
+	.byte	'cmd',0,1,246,3,11
 	.word	.L239,.L277
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetComPinsHardwareConfig')
@@ -23575,7 +23446,7 @@ ssd1306_inst:	.type	object
 .L592:
 	.byte	5,13,7,0,5,2
 	.word	.L63
-	.byte	3,231,3,1,5,20,9
+	.byte	3,243,3,1,5,20,9
 	.half	.L388-.L63
 	.byte	3,2,1,5,18,9
 	.half	.L593-.L388
@@ -23617,18 +23488,18 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'SetDisplayClockRatioFreq',0,1,242,3,13,1,1
+	.byte	'SetDisplayClockRatioFreq',0,1,254,3,13,1,1
 	.word	.L65,.L278,.L64
 	.byte	4
-	.byte	'divRatio',0,1,242,3,44
+	.byte	'divRatio',0,1,254,3,44
 	.word	.L216,.L279
 	.byte	4
-	.byte	'oscFreq',0,1,242,3,60
+	.byte	'oscFreq',0,1,254,3,60
 	.word	.L216,.L280
 	.byte	5
 	.word	.L65,.L278
 	.byte	6
-	.byte	'cmd',0,1,244,3,11
+	.byte	'cmd',0,1,128,4,11
 	.word	.L239,.L281
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('SetDisplayClockRatioFreq')
@@ -23650,7 +23521,7 @@ ssd1306_inst:	.type	object
 .L604:
 	.byte	5,13,7,0,5,2
 	.word	.L65
-	.byte	3,241,3,1,5,20,9
+	.byte	3,253,3,1,5,20,9
 	.half	.L390-.L65
 	.byte	3,2,1,5,18,9
 	.half	.L605-.L390
@@ -23694,15 +23565,15 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'ChargePumpSetting',0,1,159,4,13,1,1
+	.byte	'ChargePumpSetting',0,1,171,4,13,1,1
 	.word	.L67,.L282,.L66
 	.byte	4
-	.byte	'bEnable',0,1,159,4,37
+	.byte	'bEnable',0,1,171,4,37
 	.word	.L216,.L283
 	.byte	5
 	.word	.L67,.L282
 	.byte	6
-	.byte	'cmd',0,1,161,4,11
+	.byte	'cmd',0,1,173,4,11
 	.word	.L239,.L284
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('ChargePumpSetting')
@@ -23724,7 +23595,7 @@ ssd1306_inst:	.type	object
 .L616:
 	.byte	5,13,7,0,5,2
 	.word	.L67
-	.byte	3,158,4,1,5,20,9
+	.byte	3,170,4,1,5,20,9
 	.half	.L393-.L67
 	.byte	3,2,1,5,18,9
 	.half	.L617-.L393
@@ -23766,21 +23637,21 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'_SendData',0,1,169,4,13,1,1
+	.byte	'_SendData',0,1,181,4,13,1,1
 	.word	.L69,.L285,.L68
 	.byte	4
-	.byte	'type',0,1,169,4,40
+	.byte	'type',0,1,181,4,40
 	.word	.L286,.L287
 	.byte	4
-	.byte	'data',0,1,169,4,59
+	.byte	'data',0,1,181,4,59
 	.word	.L288,.L289
 	.byte	4
-	.byte	'size',0,1,169,4,75
+	.byte	'size',0,1,181,4,75
 	.word	.L290,.L291
 	.byte	5
 	.word	.L69,.L285
 	.byte	6
-	.byte	'buffer',0,1,171,4,11
+	.byte	'buffer',0,1,195,4,11
 	.word	.L228,.L292
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('_SendData')
@@ -23802,13 +23673,13 @@ ssd1306_inst:	.type	object
 .L628:
 	.byte	5,13,7,0,5,2
 	.word	.L69
-	.byte	3,168,4,1,5,42,9
+	.byte	3,180,4,1,5,42,9
 	.half	.L400-.L69
-	.byte	3,2,1,5,40,9
+	.byte	3,14,1,5,40,9
 	.half	.L629-.L400
 	.byte	1,5,17,9
 	.half	.L630-.L629
-	.byte	3,2,1,5,37,9
+	.byte	3,1,1,5,37,9
 	.half	.L631-.L630
 	.byte	1,5,23,9
 	.half	.L399-.L631
@@ -23816,7 +23687,7 @@ ssd1306_inst:	.type	object
 	.half	.L632-.L399
 	.byte	1,5,1,9
 	.half	.L402-.L632
-	.byte	3,1,1,7,9
+	.byte	3,2,1,7,9
 	.half	.L182-.L402
 	.byte	0,1,1
 .L626:
@@ -23838,16 +23709,16 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'_SendPacket',0,1,177,4,13,1,1
+	.byte	'_SendPacket',0,1,201,4,13,1,1
 	.word	.L71,.L293,.L70
 	.byte	4
-	.byte	'type',0,1,177,4,42
+	.byte	'type',0,1,201,4,42
 	.word	.L286,.L294
 	.byte	4
-	.byte	'packet',0,1,177,4,61
+	.byte	'packet',0,1,201,4,61
 	.word	.L288,.L295
 	.byte	4
-	.byte	'size',0,1,177,4,79
+	.byte	'size',0,1,201,4,79
 	.word	.L290,.L296
 	.byte	5
 	.word	.L71,.L293
@@ -23870,7 +23741,7 @@ ssd1306_inst:	.type	object
 .L636:
 	.byte	5,13,7,0,5,2
 	.word	.L71
-	.byte	3,176,4,1,5,16,9
+	.byte	3,200,4,1,5,16,9
 	.half	.L406-.L71
 	.byte	3,2,1,5,28,9
 	.half	.L637-.L406
@@ -23900,35 +23771,35 @@ ssd1306_inst:	.type	object
 	.byte	2
 	.word	.L74
 	.byte	3
-	.byte	'_MakePacket',0,1,182,4,13,1,1
+	.byte	'_MakePacket',0,1,206,4,13,1,1
 	.word	.L73,.L297,.L72
 	.byte	4
-	.byte	'buffer',0,1,182,4,32
+	.byte	'buffer',0,1,206,4,32
 	.word	.L214,.L298
 	.byte	4
-	.byte	'type',0,1,182,4,57
+	.byte	'type',0,1,206,4,57
 	.word	.L286,.L299
 	.byte	4
-	.byte	'data',0,1,182,4,76
+	.byte	'data',0,1,206,4,76
 	.word	.L288,.L300
 	.byte	4
-	.byte	'size',0,1,182,4,92
+	.byte	'size',0,1,206,4,92
 	.word	.L290,.L301
 	.byte	5
 	.word	.L73,.L297
 	.byte	6
-	.byte	'_contBit',0,1,184,4,17
+	.byte	'_contBit',0,1,208,4,17
 	.word	.L302,.L303
 	.byte	6
-	.byte	'_cByte',0,1,185,4,17
+	.byte	'_cByte',0,1,209,4,17
 	.word	.L304,.L305
 	.byte	6
-	.byte	'cByte',0,1,186,4,11
+	.byte	'cByte',0,1,210,4,11
 	.word	.L216,.L306
 	.byte	5
 	.word	.L307,.L308
 	.byte	6
-	.byte	'i',0,1,189,4,14
+	.byte	'i',0,1,213,4,14
 	.word	.L225,.L309
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('_MakePacket')
@@ -23950,7 +23821,7 @@ ssd1306_inst:	.type	object
 .L641:
 	.byte	5,26,7,0,5,2
 	.word	.L73
-	.byte	3,183,4,1,5,40,9
+	.byte	3,207,4,1,5,40,9
 	.half	.L408-.L73
 	.byte	3,1,1,5,20,9
 	.half	.L407-.L408
@@ -24195,7 +24066,7 @@ ssd1306_inst:	.type	object
 	.sdecl	'.debug_info',debug,cluster('TestDisplay')
 	.sect	'.debug_info'
 .L203:
-	.word	343
+	.word	340
 	.half	3
 	.word	.L204
 	.byte	4,1
@@ -24211,20 +24082,20 @@ ssd1306_inst:	.type	object
 	.byte	4
 	.word	.L27,.L329
 	.byte	5
-	.byte	'MarilynMonroe',0,1,170,1,13
-	.word	.L330,.L331
+	.byte	'x',0,1,170,1,11
+	.word	.L216,.L330
 	.byte	5
-	.byte	'data',0,1,236,1,11
-	.word	.L332,.L333
+	.byte	'y',0,1,171,1,11
+	.word	.L216,.L331
 	.byte	5
-	.byte	'x',0,1,237,1,11
-	.word	.L216,.L334
+	.byte	'value',0,1,172,1,11
+	.word	.L216,.L332
 	.byte	5
-	.byte	'y',0,1,238,1,11
-	.word	.L216,.L335
+	.byte	'data',0,1,175,1,11
+	.word	.L333,.L334
 	.byte	5
-	.byte	'value',0,1,239,1,11
-	.word	.L216,.L336
+	.byte	'Charmander',0,1,176,1,17
+	.word	.L335,.L336
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('TestDisplay')
 	.sect	'.debug_abbrev'
@@ -24244,17 +24115,17 @@ ssd1306_inst:	.type	object
 .L685:
 	.byte	5,13,7,0,5,2
 	.word	.L27
-	.byte	3,167,1,1,5,31,9
+	.byte	3,167,1,1,5,59,9
 	.half	.L348-.L27
-	.byte	3,2,1,5,29,9
+	.byte	3,7,1,5,57,9
 	.half	.L686-.L348
-	.byte	1,5,59,9
+	.byte	1,5,32,9
 	.half	.L687-.L686
-	.byte	3,194,0,1,5,57,9
+	.byte	3,1,1,5,30,9
 	.half	.L688-.L687
 	.byte	1,5,17,9
 	.half	.L689-.L688
-	.byte	3,6,1,5,23,9
+	.byte	3,194,0,1,5,23,9
 	.half	.L690-.L689
 	.byte	1,5,24,9
 	.half	.L691-.L690
@@ -24268,7 +24139,7 @@ ssd1306_inst:	.type	object
 	.half	.L695-.L694
 	.byte	1,5,1,9
 	.half	.L696-.L695
-	.byte	3,7,1,7,9
+	.byte	3,19,1,7,9
 	.half	.L207-.L696
 	.byte	0,1,1
 .L683:
@@ -24780,10 +24651,10 @@ ssd1306_inst:	.type	object
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('TestDisplay')
 	.sect	'.debug_loc'
-.L331:
+.L336:
 	.word	-1,.L27,0,.L329-.L27
 	.half	3
-	.byte	145,128,104
+	.byte	145,128,120
 	.word	0,0
 .L26:
 	.word	-1,.L27,0,.L348-.L27
@@ -24796,16 +24667,16 @@ ssd1306_inst:	.type	object
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L333:
+.L334:
 	.word	-1,.L27,0,.L329-.L27
 	.half	3
-	.byte	145,128,112
+	.byte	145,128,104
 	.word	0,0
-.L336:
+.L332:
 	.word	0,0
-.L334:
+.L330:
 	.word	0,0
-.L335:
+.L331:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('_DafaultSoftwareInit')
 	.sect	'.debug_loc'

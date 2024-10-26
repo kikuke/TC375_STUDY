@@ -75,7 +75,7 @@
      </mbMake>
     </GlobalOptions>
     <Project.0>
-     <DefaultTargetName>ADS - Debug</DefaultTargetName>
+     <DefaultTargetName></DefaultTargetName>
      <FilterName>No filter</FilterName>
      <ProjectName></ProjectName>
      <AdvancedLinkerOptions>
@@ -106,33 +106,6 @@
       <TranslateCharacter>38</TranslateCharacter>
       <UseTargetDirectory2>False</UseTargetDirectory2>
      </TargetOptions>
-     <Target.0>
-      <TargetName>ADS - Debug</TargetName>
-      <FileOptios>
-       <AssemblerOptions>$(EDNAME)</AssemblerOptions>
-       <CompilerOptions>$(EDNAME)</CompilerOptions>
-      </FileOptios>
-      <LinkGroup.0>
-       <LinkGroupName>Source files</LinkGroupName>
-      </LinkGroup.0>
-      <TargetOptios>
-       <AsmArgFile></AsmArgFile>
-       <BuildOptions></BuildOptions>
-       <CompArgFile></CompArgFile>
-       <CRLF>False</CRLF>
-       <ExternalMakeFileParameters></ExternalMakeFileParameters>
-       <IndFileLocation>0</IndFileLocation>
-       <IndirectionFile></IndirectionFile>
-       <LinkerOptions></LinkerOptions>
-       <MakeOptions></MakeOptions>
-       <RunAfterLinkParam></RunAfterLinkParam>
-       <SkipObjectCheck>False</SkipObjectCheck>
-       <TargetDirectory></TargetDirectory>
-       <TargetDirectory2></TargetDirectory2>
-       <TranslateCharacter>38</TranslateCharacter>
-       <UseTargetDirectory2>False</UseTargetDirectory2>
-      </TargetOptios>
-     </Target.0>
     </Project.0>
    </Project>
   </REG_ROOT>

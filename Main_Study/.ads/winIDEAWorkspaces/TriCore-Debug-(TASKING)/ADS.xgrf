@@ -53,11 +53,11 @@
         </__.4>
         <__.5>
          <BookmarkList></BookmarkList>
-         <CaretPos>12249</CaretPos>
+         <CaretPos>12219</CaretPos>
          <Encoding>8</Encoding>
          <FileName>C:\Users\KJS\Documents\DV\TC375_STUDY\Main_Study\ASW\Module\SSD1306\SSD1306.c</FileName>
          <FileType>1</FileType>
-         <ScrollPos>254</ScrollPos>
+         <ScrollPos>249</ScrollPos>
         </__.5>
         <__.6>
          <BookmarkList></BookmarkList>
@@ -335,7 +335,7 @@
       <PrimaryDocumentPaneId>4</PrimaryDocumentPaneId>
       <Frames>
        <__.0>
-        <FocusedViewId>5</FocusedViewId>
+        <FocusedViewId>11</FocusedViewId>
         <FrameState>3</FrameState>
         <IsPrimary>true</IsPrimary>
         <Bounds>
@@ -381,7 +381,7 @@
              <IsPinned>false</IsPinned>
              <IsTabbed>true</IsTabbed>
              <Orientation>None</Orientation>
-             <TopTabViewId>5</TopTabViewId>
+             <TopTabViewId>11</TopTabViewId>
              <ViewId>-1</ViewId>
              <Children>
               <__.0>
@@ -529,6 +529,10 @@
       </FindInFilesDialogData>
      </GlobalData>
      <History>
+      <ComboBox>
+       <ComboBoxes>
+       </ComboBoxes>
+      </ComboBox>
      </History>
      <Options>
       <CallstackWindow>
